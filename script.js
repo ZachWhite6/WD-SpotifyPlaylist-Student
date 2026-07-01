@@ -118,8 +118,14 @@ function buildPlaylist() {
      3. Write an if / else if that assigns `songs` based on
         the mode
      ===================================================== */
-
-
+  let songs = 0;
+  function modeSelector(){
+  if (modeSelector === "quickPlay") {
+    const songs = 3;
+  } else if (modeSelector === "fullSession"){
+    const songs = allSongs;
+  }
+}
 
   /* =====================================================
      DEV TEAMS — STEP 6: Conditional Feedback
@@ -164,7 +170,10 @@ function buildPlaylist() {
 
      YOUR CODE GOES HERE:
      ===================================================== */
-
+  if (playlistData.songs >= 0) {
+    feedback.textContent = "Reset Playlist?";
+    feedback.className = "feedback-box reset";
+  }
 
 
   /* =====================================================
@@ -181,7 +190,10 @@ function buildPlaylist() {
 
      YOUR CODE GOES HERE:
      ===================================================== */
+  songs.forEach(let songs = 0; songs <5; songs++) => {
 
+  }
+    
 
 
     /* =====================================================
